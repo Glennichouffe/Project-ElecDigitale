@@ -69,7 +69,7 @@ void main()
       //signal arrive. On met en marche le timer et on calcule le temps a l'etat haut
       set_timer0(0);
       while(input(PIN_C1)){}
-      time=get_timer0()*(1.6);//recupere le timer qu'on multiplie par son temps ici 1.6 microseconds
+      time=get_timer0()*(0.2);//recupere le timer qu'on multiplie par son temps ici 1.6 microseconds
 
       distance=(int16)time*0.017;//on multiplie par la vitesse du son divise par 2
       
